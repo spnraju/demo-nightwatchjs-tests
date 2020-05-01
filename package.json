@@ -1,0 +1,27 @@
+{
+  "name": "demo-nightwatchjs-tests",
+  "version": "1.0.0",
+  "description": "Sample nightwatchjs tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch -e chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spnraju/demo-nightwatchjs-tests.git"
+  },
+  "keywords": [
+    "nightwatchjs"
+  ],
+  "author": "Raju <padmanabharaju.sagi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spnraju/demo-nightwatchjs-tests/issues"
+  },
+  "homepage": "https://github.com/spnraju/demo-nightwatchjs-tests#readme",
+  "devDependencies": {
+    "chromedriver": "^81.0.0",
+    "geckodriver": "^1.19.1",
+    "nightwatch": "^1.3.4"
+  }
+}
