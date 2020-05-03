@@ -69,7 +69,6 @@ module.exports = {
       desiredCapabilities : {
         browserName : 'chrome',
         chromeOptions : {
-          w3c: true,
           args: [
             '--no-sandbox',
             '--ignore-certificate-errors',
@@ -82,9 +81,6 @@ module.exports = {
         start_process: true,
         port: 9515,
         server_path: (Services.chromedriver ? Services.chromedriver.path : ''),
-        cli_args: [
-          '--verbose'
-        ],
         log_path: false
       }
     },
