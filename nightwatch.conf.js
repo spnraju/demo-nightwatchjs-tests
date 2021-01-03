@@ -32,6 +32,7 @@ module.exports = {
       },
       desiredCapabilities: {
         browserName : 'chrome',
+        javascriptEnabled : false,
         chromeOptions : {
           args: [
             '--no-sandbox',
@@ -68,6 +69,7 @@ module.exports = {
     chrome: {
       desiredCapabilities : {
         browserName : 'chrome',
+        javascriptEnabled : false,
         chromeOptions : {
           args: [
             '--no-sandbox',
