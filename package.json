@@ -4,7 +4,8 @@
   "description": "Sample nightwatchjs tests",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch -e chrome"
+    "test": "nightwatch -e chrome",
+    "update": "npx npm-check-updates --upgrade && npm install && npm audit fix"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,8 @@
   },
   "homepage": "https://github.com/spnraju/demo-nightwatchjs-tests#readme",
   "devDependencies": {
-    "chromedriver": "^87.0.4",
-    "geckodriver": "^1.21.1",
+    "chromedriver": "^88.0.0",
+    "geckodriver": "^1.22.1",
     "nightwatch": "^1.5.1"
   }
 }
