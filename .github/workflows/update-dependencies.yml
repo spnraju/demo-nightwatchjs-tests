@@ -27,7 +27,7 @@ jobs:
           commit-message: update dependencies - ${{ env.MY_DATE }}
           branch: update-dependencies
           delete-branch: true
-          base: master
+          base: main
           title: update dependencies
           body: update dependencies
           labels: dependencies
