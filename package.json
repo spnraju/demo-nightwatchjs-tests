@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/spnraju/demo-nightwatchjs-tests#readme",
   "devDependencies": {
-    "chromedriver": "^90.0.0",
-    "geckodriver": "^1.22.3",
+    "chromedriver": "^90.0.1",
+    "geckodriver": "^2.0.0",
     "nightwatch": "^1.6.4"
   }
 }
