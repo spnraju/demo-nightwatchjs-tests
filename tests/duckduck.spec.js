@@ -1,9 +1,9 @@
 module.exports = {
-  'DuckduckGo Launch' : function (browser) {
+  "DuckduckGo Launch": function (browser) {
     browser
-      .url('https://www.duckduckgo.com/')
-      .waitForElementVisible('body')
-      .assert.titleContains('DuckDuckGo')
+      .url("https://www.duckduckgo.com/")
+      .waitForElementVisible("body")
+      .assert.titleContains("DuckDuckGo")
       .end();
-  }
+  },
 };
