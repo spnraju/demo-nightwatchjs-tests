@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "nightwatch -e chrome",
+    "lint": "eslint --ext .js . --fix",
+    "prettier": "prettier **/*.js --write",
     "update": "npx npm-check-updates --upgrade && npm install && npm audit fix"
   },
   "repository": {
@@ -22,7 +24,10 @@
   "homepage": "https://github.com/spnraju/demo-nightwatchjs-tests#readme",
   "devDependencies": {
     "chromedriver": "^103.0.0",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
     "geckodriver": "^3.0.2",
-    "nightwatch": "^2.3.0"
+    "nightwatch": "^2.3.0",
+    "prettier": "^2.7.1"
   }
 }
