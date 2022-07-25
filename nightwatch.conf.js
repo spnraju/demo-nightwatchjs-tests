@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const Services = {};
 loadServices();
 
@@ -181,18 +183,18 @@ function loadServices() {
   try {
     Services.seleniumServer = require('selenium-server');
   } catch (err) {
-    console.log(err);
+    console.warn(err);
   }
 
   try {
     Services.chromedriver = require('chromedriver');
   } catch (err) {
-    console.log(err);
+    console.warn(err);
   }
 
   try {
     Services.geckodriver = require('geckodriver');
   } catch (err) {
-    console.log(err);
+    console.warn(err);
   }
 }
