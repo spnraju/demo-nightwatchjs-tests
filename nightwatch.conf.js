@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 
 const Services = {};
 loadServices();
@@ -36,7 +36,7 @@ module.exports = {
         browserName: 'chrome',
         javascriptEnabled: false,
         chromeOptions: {
-          args: ['--no-sandbox', '--ignore-certificate-errors', '--allow-insecure-localhost', '--headless'],
+          args: ['--no-sandbox', '--ignore-certificate-errors', '--allow-insecure-localhost'],
         },
       },
       webdriver: {
@@ -49,10 +49,11 @@ module.exports = {
     firefox: {
       desiredCapabilities: {
         browserName: 'firefox',
-        alwaysMatch: {
-          'moz:firefoxOptions': {
-            args: [],
-          },
+        javascriptEnabled: true,
+        acceptSslCerts: true,
+        marionette: true,
+        'moz:firefoxOptions': {
+          args: ['-headless'],
         },
       },
       webdriver: {
@@ -180,11 +181,11 @@ module.exports = {
 };
 
 function loadServices() {
-  try {
-    Services.seleniumServer = require('selenium-server');
-  } catch (err) {
-    console.warn(err);
-  }
+  // try {
+  //   Services.seleniumServer = require('selenium-server');
+  // } catch (err) {
+  //   console.warn(err);
+  // }
 
   try {
     Services.chromedriver = require('chromedriver');
