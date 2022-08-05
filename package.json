@@ -25,9 +25,9 @@
   },
   "homepage": "https://github.com/spnraju/demo-nightwatchjs-tests#readme",
   "devDependencies": {
-    "chromedriver": "^103.0.0",
+    "chromedriver": "^104.0.0",
     "dotenv": "^16.0.1",
-    "eslint": "^8.20.0",
+    "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "geckodriver": "^3.0.2",
     "nightwatch": "^2.3.0",
